@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import { InstrumentsModule } from './modules/instrumentsModule'
+
 Vue.use(Vuex)
 
-export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+const store = new Vuex.Store({
+  
   modules: {
+    InstrumentsModule,
   }
 })
+
+export default store
